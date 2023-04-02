@@ -1,0 +1,6 @@
+exam/a.out
+tmp/a.out
+*.o
+apcs_tools/*.exe
+tmp/*
+/exam/2-1a
