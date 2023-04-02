@@ -1,0 +1,2 @@
+@echo 0ff
+"%~dp0mingw32-make.exe" %*

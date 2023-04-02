@@ -1,0 +1,6 @@
+DIR = lib
+OBJS = $(DIR)/cube.o
+OBJS += $(DIR)/tria.o
+
+main: main.c $(OBJS)
+    gcc main.c $(OBJS) -I include -lm -o main

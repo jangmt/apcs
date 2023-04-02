@@ -1,0 +1,6 @@
+main: main.c lib/cube.o lib/tria.o
+    gcc main.c lib/cube.o lib/tria.o -I include -lm -o main
+lib/cube.o: lib/cube.c
+    gcc -c lib/cube.c -o lib/cube.o
+lib/tria.o: lib/tria.c
+    gcc -c lib/tria.c -o lib/tria.o

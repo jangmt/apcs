@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -I include -lm
+DIR = lib
+OBJS = $(DIR)/cube.o
+OBJS += $(DIR)/tria.o
+
+main: mainfun.c $(OBJS)
+    $(CC) mainfun.c $(OBJS) $(CFLAGS)-o main
+
+$(DIR)/%.o:
+    $(DIR)/%.c $(CC) -c $< -o $@
